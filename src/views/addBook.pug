@@ -1,0 +1,21 @@
+extends layout
+block content
+ 
+ form(method='post' action='/add' enctype='multipart/form-data')
+    label Titre
+    input.form-control(name='title' type='text' placholder='Ajoute un livre')
+    label Author
+    input.form-control(name='author' type='text' placeholder='Ajoute un author ')
+    label Editor
+    input.form-control(name='editor' type='text' placeholder='Ajoute une edition ')
+    label Genre
+    input.form-control(name='genre' type='text' placholder='Ajoute un genre ')
+    label Page
+    input.form-control(name='page' type='text' placeholder='Combien de page ? ')
+    label Cover
+    input.form-control(name='cocer' type='text' placeholder='Ajoute  une photo ')
+    label Price
+    input.form-control(name='price' type='number' placeholder='Combien coute ton livre ? ')
+    input.form-control(name="img", type="file")  
+    input.btn.btn-primary(type='submit', value='Ajouter')
+

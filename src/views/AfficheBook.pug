@@ -1,0 +1,6 @@
+extends layout
+block content
+  each book in books
+    -const img = book.img 
+    img(src="../uploads/"+img)
+    h1= book.title
